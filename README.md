@@ -1,3 +1,10 @@
+#更新
+1. 在原来的基础上破解了酷狗hash，可以获取歌曲的信息。然后在此基础上增加了下载功能。收费歌曲没办法下载。
+2. 需要其他榜的歌曲修改main中的地址即可
+3. 不需要下载歌曲把get_music中的代码注释即可
+
+
+#以下为原介绍
 # kugou-web-crawler
 ### 爬取酷狗 top 500 排行榜的音乐信息  
 ### [kugou top 500](http://www.kugou.com/yy/rank/home/1-8888.html?from=rank)
