@@ -4,7 +4,7 @@
 3. 不需要下载歌曲把get_music中的代码注释即可
 
 
-#以下为原介绍
+# 以下为原介绍
 # kugou-web-crawler
 ### 爬取酷狗 top 500 排行榜的音乐信息  
 ### [kugou top 500](http://www.kugou.com/yy/rank/home/1-8888.html?from=rank)
