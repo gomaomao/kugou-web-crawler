@@ -44,8 +44,8 @@ def get_hash(url):
 
 def get_music(hash):
     global count, file
-    res = requests.get('http://wwwapi.kugou.com/yy/index.php?r=play/getdata&callback=jQuery19106946809784755619_1540004931600&hash=' + hash + '&album_id=0')
-    music = json.loads(res.text.replace('jQuery19106946809784755619_1540004931600(','').replace(');',''))
+    res = requests.get('http://wwwapi.kugou.com/yy/index.php?r=play/getdata&hash=' + hash + '&album_id=0')
+    music = json.loads(res.text)
     print('hash：' + hash + '\n' + '下载地址：' + music['data']['play_url'] + '\n' + '封面：' + music['data']['img'] + '\n')
     file.write('hash：' + hash + '\n' + '下载地址：' + music['data']['play_url'] + '\n' + '封面：' + music['data']['img'] + '\n' + '\n')
     if music['data']['play_url']:
